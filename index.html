@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Download Layout</title>
+  <link rel="stylesheet" href="css.css" />
+  <script src="js.js"></script>
+  <!--<script src="script.js"></script>-->
+</head>
+<body>
+
+<!-- 제발 되렴 네비게이션 바 -->
+<div class="top-nav">
+  <img src="https://i.imgur.com/aUmNEJO.jpg" class="pic" />
+  <h1>nVidia (bruh)</h1>
+  <div class="top-links">
+    <a href="#">Shop</a>
+    <a href="#">Drivers</a>
+    <a href="#">Support</a>
+  </div>
+</div>
+<!-- 드라이버 골라 -->
+<div class="main">
+  <div class="main-left">
+    <img src="https://i.imgur.com/aUmNEJO.jpg" class="pic" />
+  </div>
+  <div class="divider"></div>
+  <div class="main-right">
+    <h1>&nbsp;&nbsp;Manual Driver Search</h1>
+    <div class="form-group">
+      <label for="product">Product Type</label>
+      <select id="product">
+      <option>Select yo choice</option>
+      <option>Graphics Card</option>
+      <option>Laptop</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="series">Product Series</label>
+      <select id="series">
+        <option>Select yo product series</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="os">Operating System</label>
+      <select id="os">
+        <option>Select yo OS</option>
+        <option>Windows 10</option>
+        <option>Windows 11</option>
+        <option>Linux</option>
+        <option>붉은별 OS</option>
+      </select>
+    </div>
+    <button onclick="searchDriver()">Search</button>
+    <br> <br>
+    <img src="https://i.imgur.com/aUmNEJO.jpg" class="lol " />
+  </div>
+</div>
+</body>
+</html>
