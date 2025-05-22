@@ -6,44 +6,99 @@
   <title>Driver Download Layout</title>
   <link rel="stylesheet" href="css.css" />
   <script src="js.js"></script>
-  <!--<script src="script.js"></script>-->
+  <script src="https://kit.fontawesome.com/39647461a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-- 제발 되렴 네비게이션 바 -->
 <div class="top-nav">
-  <img src="https://i.imgur.com/aUmNEJO.jpg" class="pic" />
-  <h1>nVidia (bruh)</h1>
-  <div class="top-links">
-    <a href="#">Shop</a>
-    <a href="#">Drivers</a>
-    <a href="#">Support</a>
+  <div class="top-nav-left">
+    <img src="nvidia-logo.png" class="pic" />
+    <h3 class="mainmenu">> Main Menu</h3>
+    </div>
+  <div class="top-nav-right">
+    <div class="top-links">
+      <a href="#">Shop</a>
+      <a href="#">Drivers</a>
+      <a href="#">Support</a>
   </div>
+  <div class="top-nav-logos">
+    <input type="image" src="row-1-column-1.png">
+    <input type="image" src="row-1-column-2.png">
+    <input type="image" src="row-1-column-3.png">
+  </div>
+    </div>
+</div>
+<!-- under navigation -->
+<div class="under-nav">
+  <h1 class="GeForce">GeForce</h1>
+  <div class="dropdown-menu">
+  <p class="Products">Products</p>
+  <div class="dropdown">
+    <a href="#">Graphics Cards & Desktops</a>
+    <a href="#">Laptops</a>
+    <a href="#">G-SYNC Monitors</a>
+    <a href="#">GeForce NOW Cloud Gaming</a>
+    <a href="#">RTX AI PCs</a>
+  </div>
+    </div>
+  <div class="dropdown-menu">
+  <p class="games-tech">Games & Tech</p>
+  <div class="dropdown">
+    <a href="#">DLSS & Ray Tracing</a>
+    <a href="#">Architecture</a>
+    <a href="#">Gaming</a>
+    <a href="#">Studio Graphics Tools</a>
+  </div>
+    </div>
+  <p class="nvidia-app">NVIDIA App</p>
+  <p class="drivers">Drivers</p>
+  <p class="news">News</p>
+  <p class="support">Support</p>
 </div>
 <!-- 드라이버 골라 -->
+<h1 class="Geforce-Drivers">GeForce® Drivers</h1>
+<br><br><br>
 <div class="main">
   <div class="main-left">
-    <img src="https://i.imgur.com/aUmNEJO.jpg" class="pic" />
+    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/banner-add/geforce-rtx-5060-gf-driver-dl-300x250.jpg" class="ad1" />
+    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/banner-add/geforce-rtx-5060-laptop-availability-gf-driver-dl-300x250.jpg" class="ad2" />
+    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/banner-add/67430-gf-driver-dl-300x250.jpg" class = "ad3" />
   </div>
   <div class="divider"></div>
   <div class="main-right">
-    <h1>&nbsp;&nbsp;Manual Driver Search</h1>
+    <h1>Automatic Driver Updates</h1>
+    <p class="auto-driver-updates">The NVIDIA App is the essential companion for PC gamers and creators. Keep your PC up to date with the latest NVIDIA drivers and technology.</p>
+    <input type="image" src="download-now.png" class="auto-driver-updates-button" />
+    <h1>Manual Driver Search</h1>
+    <p class="manualdriversearchptag">Search all GeForce drivers by providing your system information.</p>
     <div class="form-group">
-      <label for="product">Product Type</label>
-      <select id="product">
-      <option>Select yo choice</option>
-      <option>Graphics Card</option>
-      <option>Laptop</option>
+      <p>Product Type: </p>
+      <select class="product" >
+      <option>GeForce</option>
+      <option>NVIDIA RTX PRO / RTX / Quadro</option>
+      <option>NVIDIA RTX PRO / RTX  / Quadro</option>
+        <option>Data Center / Tesla</option>
+      <option>GRID</option>
+        <option>NVS</option>
+        <option>ION</option>
+        <option>Legacy</option>
+        <option>3D Vision</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="series">Product Series</label>
+      <p>Product Series: </p>
       <select id="series">
-        <option>Select yo product series</option>
+        <option>GeForce RTX50 Series</option>
       </select>
     </div>
     <div class="form-group">
-      <label for="os">Operating System</label>
+      <p>Product: </p>
+      <select id="series">
+        <option>NVIDIA GeForce RTX 5090</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Operating System</p>
       <select id="os">
         <option>Select yo OS</option>
         <option>Windows 10</option>
@@ -52,10 +107,109 @@
         <option>붉은별 OS</option>
       </select>
     </div>
-    <button onclick="searchDriver()">Search</button>
-    <br> <br>
-    <img src="https://i.imgur.com/aUmNEJO.jpg" class="lol " />
+      <div class="form-group">
+        <p>Language: </p>
+        <select id="series">
+          <option>English (US)</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <p>Download Type: </p>
+      <select id="series">
+        <option>All</option>
+        <option>Game Ready Driver</option>
+        <option>Studio Driver</option>
+      </select>
+    </div>
+    <button onclick="searchDriver()" class="search"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Start Search </button>
+  </div>
+  </div>
+  <div class="bottom-divider"></div>
+  <div class="bottom">
+    <div class="bottom-left">
+      <div class="driver-forums">
+        <img class="driver-forum" src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/search/driver-forum-icon.svg">
+        <h2>Driver Forum</h2>
+        <p class="driver-forum-text">Questions or issues regarding drivers? Discuss them with other GeForce users in our forum.</p>
+        <a href="#" class="visit-forum">Visit Forum ></a>
+      </div>
+    </div>
+    <div class="bottom-divider-horizontal"></div>
+    <div class="bottom-right">
+      <img class = "?" src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/drivers/search/question-icon.svg">
+      <div class="gamereadydrivers">
+        <h2>Game Ready Drivers Vs NVIDIA Studio Drivers</h2>
+        <p class="gamereadydrivers-text">Whether you are playing the hottest new games or working with the latest creative applications, NVIDIA drivers are custom tailored to provide the best possible experience.  If you are a gamer who prioritizes day of launch support for the latest games, patches, and DLCs, choose Game Ready Drivers.  If you are a content creator who prioritizes reliability for creative workflows including video editing, animation, photography, graphic design, and livestreaming, choose Studio Drivers.  Do a little bit of both?  No worries, either can support running the best games and creative apps.</p>
+      </div>
+    </div>
+
+  </div>
+<div class="lasthorizontaldivier"></div>
+<div class="footer">
+  <div class="footer-column">
+    <h3>Products</h3>
+    <ul>
+      <li><a href="#">Graphics Cards</a></li>
+      <li><a href="#">Laptops</a></li>
+      <li><a href="#">G-SYNC Monitors</a></li>
+      <li><a href="#">GeForce NOW Cloud Gaming</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Community & News</h3>
+    <ul>
+      <li><a href="#">Latest News</a></li>
+      <li><a href="#">Community Forums</a></li>
+      <li><a href="#">Community Portal</a></li>
+      <li><a href="#">Developer Resources</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Support</h3>
+    <ul>
+      <li><a href="#">Drivers</a></li>
+      <li><a href="#">Purchase Support</a></li>
+      <li><a href="#">Technical Support</a></li>
+    </ul>
   </div>
 </div>
-</body>
+
+<div class = "socials">
+  <p class="followgeforce">Follow GeForce</p>
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-twitch"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+
+
+</div>
+
+<div class = "whiteboard">
+  <img src="whiteboard-nvidia-logo.png" class="whiteboard-nvidia-logo">
+  <div class="whiteboard-text-div">
+  <p class="whiteboard-text">Privacy Policy</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Manage My Privacy</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Do Not Sell or Share My Data</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Terms of Service</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Accessibility</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Corporate Policies</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Product Security</p>
+    <p>&nbsp;|&nbsp;</p>
+  <p class="whiteboard-text">Contact</p>
+    </div>
+  <p class="copyright">Copyright © 2025 NVIDIA Corporation</p>
+</div>
+  </body>
 </html>
